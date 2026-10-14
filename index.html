@@ -3,178 +3,194 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sumaiya Siddika | CSE Student & Web Developer</title>
-  <meta name="description" content="Portfolio of Sumaiya Siddika, CSE student at IUBAT, Dhaka. Web development, PHP and C++ projects.">
-  <meta name="theme-color" content="#a3005f">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Playfair+Display:wght@500;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Portfolio of Sumaiya Siddika — CSE Student and aspiring Web Developer.">
+  <title>Sumaiya Siddika | Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header" id="header">
-    <div class="header-inner">
-      <a class="brand" href="#home">Sumaiya.</a>
-      <nav class="nav" id="nav" aria-label="Main">
-        <a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#certificates">Certificates</a><a href="#contact">Contact</a>
-      </nav>
-      <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
-    </div>
+  <div class="progress" id="progress"></div>
+
+  <header class="header" id="header">
+    <a class="brand" href="#home">Sumaiya<span>.</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" id="nav">
+      <a class="active" href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
   <main>
-    <!-- HERO -->
-    <section id="home" class="hero">
-      <div class="hero-photo"><img src="images/sumaiya.jpg" alt="Portrait of Sumaiya Siddika"></div>
-      <div class="hero-left">
-        <ul class="socials" aria-label="Social links">
-          <li><a href="https://www.linkedin.com/in/sumaiya-siddika-248665363" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="icon" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a></li>
-          <li><a href="https://github.com/SumaiyaSiddika24" target="_blank" rel="noopener" aria-label="GitHub"><svg class="icon" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a></li>
-          <li><a href="https://wa.me/8801XXXXXXXXX" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="icon" viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8z"/></svg></a></li>
-        </ul>
+    <section class="hero" id="home">
+      <div class="hero-photo-panel">
+        <div class="hero-socials">
+          <a href="https://www.linkedin.com/in/sumaiya-siddika-248665363" target="_blank" aria-label="LinkedIn">in</a>
+          <a href="https://github.com/SumaiyaSiddika24" target="_blank" aria-label="GitHub">GH</a>
+          <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">f</a>
+        </div>
+        <div class="photo-ring">
+          <img src="assets/profile.jpg" alt="Professional photo of Sumaiya Siddika">
+        </div>
       </div>
-      <div class="hero-right">
-        <p class="role">CSE Student | Web Developer</p>
-        <h1 class="name">Hello, I'm <span>Sumaiya</span></h1>
-        <p class="lede">I am a Computer Science student passionate about web development and creative design. I enjoy learning new technologies and building beautiful websites.</p>
-        <div class="hero-cta">
-          <a class="button ghost" href="Sumaiya_Siddika_CV.pdf" download>Download CV</a>
-          <a class="button" href="#contact">Contact</a>
+
+      <div class="hero-content">
+        <p class="eyebrow">CSE Student | Web Development Enthusiast</p>
+        <h1>Hello, I'm <span>Sumaiya</span></h1>
+        <p class="hero-text">
+          I am a Computer Science student passionate about web development and technology.
+          I enjoy learning new skills, solving problems, and building user-friendly websites.
+        </p>
+        <div class="hero-actions">
+          <a class="btn outline" href="Sumaiya_Siddika_CV.docx" download>Download CV</a>
+          <a class="btn solid" href="#contact">Contact</a>
+        </div>
+        <div class="quick-info">
+          <span>📍 Dhaka, Bangladesh</span>
+          <span>✉ shoshi4228@gmail.com</span>
         </div>
       </div>
     </section>
 
-    <!-- STATS -->
-    <section class="stats-wrap" aria-label="Highlights">
-      <div class="stats">
-        <div class="stat"><strong><span class="count" data-target="3.92" data-decimals="2">3.92</span></strong><span>CGPA at IUBAT</span></div>
-        <div class="stat"><strong><span class="count" data-target="2" data-decimals="0">2</span></strong><span>Projects built</span></div>
-        <div class="stat"><strong><span class="count" data-target="3" data-decimals="0">3</span></strong><span>Certificates earned</span></div>
-        <div class="stat"><strong>2028</strong><span>Expected graduation</span></div>
+    <section class="section" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">About Me</p>
+        <h2>Who I am</h2>
       </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" class="section">
-      <div class="container two-col">
-        <div>
-          <h2 class="section-title">About me</h2>
-          <p class="section-lede">Why I chose CSE and web development.</p>
+      <div class="about-grid">
+        <div class="about-card highlight">
+          <h3>CSE Student</h3>
+          <p>International University of Business, Agriculture and Technology</p>
+          <strong>CGPA 3.92 · Expected Graduation 2028</strong>
         </div>
-        <div class="about-body">
-          <p>I am a CSE student with an interest in web development and technology. I enjoy learning new skills, solving problems, and creating user-friendly websites.</p>
-          <p>I chose CSE because I am interested in how technology can solve real-world problems. Web development lets me combine creativity with technical skills to build useful, interactive websites.</p>
-          <p>My goal is to strengthen my web development skills, build practical projects, and gain real-world experience as a developer.</p>
-          <dl class="facts">
-            <div><dt>University</dt><dd>IUBAT</dd></div>
-            <div><dt>Location</dt><dd>Dhaka, Bangladesh</dd></div>
-            <div><dt>Strengths</dt><dd>Quick learner, problem solver</dd></div>
-            <div><dt>Languages</dt><dd>Bangla, English (fluent)</dd></div>
-          </dl>
+        <div class="about-card">
+          <p>
+            I chose CSE because I am interested in technology and how it can solve real-world
+            problems. Web Development allows me to combine creativity with technical skills
+            to build useful and interactive websites.
+          </p>
+          <p>
+            My goal is to strengthen my development skills, build practical projects,
+            gain real-world experience, and establish a successful career in the tech industry.
+          </p>
         </div>
       </div>
     </section>
 
-    <!-- SKILLS -->
-    <section id="skills" class="section alt">
-      <div class="container">
-        <h2 class="section-title">My skills</h2>
-        <p class="section-lede">The languages and tools I use to build things.</p>
-        <div class="grid grid-4">
-          <article class="card"><h3>Web development</h3><ul class="chips"><li>HTML (intermediate)</li><li>CSS (beginner)</li><li>JavaScript (learning)</li></ul></article>
-          <article class="card"><h3>Programming</h3><ul class="chips"><li>C</li><li>C++</li><li>C#</li></ul></article>
-          <article class="card"><h3>Tools</h3><ul class="chips"><li>VS Code</li><li>GitHub</li><li>XAMPP</li><li>MS Office</li></ul></article>
-          <article class="card"><h3>Languages</h3><ul class="chips"><li>Bangla</li><li>English</li></ul></article>
-        </div>
+    <section class="section soft" id="skills">
+      <div class="section-heading">
+        <p class="eyebrow">What I Know</p>
+        <h2>Skills & Tools</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card"><b>HTML</b><span>Intermediate</span></div>
+        <div class="skill-card"><b>CSS</b><span>Beginner</span></div>
+        <div class="skill-card"><b>JavaScript</b><span>Learning</span></div>
+        <div class="skill-card"><b>C / C++</b><span>Programming</span></div>
+        <div class="skill-card"><b>C#</b><span>Beginner</span></div>
+        <div class="skill-card"><b>VS Code</b><span>Development Tool</span></div>
+        <div class="skill-card"><b>GitHub</b><span>Version Control</span></div>
+        <div class="skill-card"><b>XAMPP</b><span>PHP / Local Server</span></div>
+        <div class="skill-card"><b>MS Office</b><span>Productivity</span></div>
       </div>
     </section>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="section">
-      <div class="container">
-        <h2 class="section-title">My projects</h2>
-        <p class="section-lede">Built with my university team and on my own.</p>
-        <div class="grid grid-2">
-          <article class="card project">
-            <h3>Shajabo.com, Lighting Shop</h3>
-            <p>An e-commerce website for a lighting shop, built with my university team.</p>
-            <ul class="chips small"><li>E-commerce</li><li>Team project</li></ul>
-          </article>
-          <article class="card project">
-            <h3>PHP Project</h3>
-            <p>A PHP web project built while learning backend development.</p>
-            <ul class="chips small"><li>PHP</li><li>XAMPP</li></ul>
-          </article>
-        </div>
+    <section class="section" id="projects">
+      <div class="section-heading">
+        <p class="eyebrow">My Work</p>
+        <h2>Projects</h2>
       </div>
-    </section>
-
-    <!-- EDUCATION -->
-    <section id="education" class="section alt">
-      <div class="container">
-        <h2 class="section-title">Education</h2>
-        <p class="section-lede">Where I'm studying now.</p>
-        <div class="t-card">
-          <span class="t-date">Expected 2028</span>
-          <h3>B.Sc. in Computer Science &amp; Engineering</h3>
-          <p>International University of Business Agriculture and Technology (IUBAT)</p>
-          <span class="pill">CGPA: 3.92</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- CERTIFICATES -->
-    <section id="certificates" class="section">
-      <div class="container">
-        <h2 class="section-title">Certificates</h2>
-        <p class="section-lede">Training through government skill development programs.</p>
-        <div class="grid grid-3">
-          <article class="card"><h3>Front-End Developer</h3><p>Learned HTML through a government skill development program.</p></article>
-          <article class="card"><h3>PHP Certificate</h3><p>Received in January 2026.</p></article>
-          <article class="card"><h3>E-commerce Project</h3><p>Certificate for a team e-commerce project.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="contact">
-      <div class="contact-card">
-        <div class="contact-left">
-          <h2>Let's<br>Talk</h2>
-          <ul class="socials dark" aria-label="Social links">
-            <li><a href="https://www.linkedin.com/in/sumaiya-siddika-248665363" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="icon" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a></li>
-            <li><a href="https://github.com/SumaiyaSiddika24" target="_blank" rel="noopener" aria-label="GitHub"><svg class="icon" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a></li>
-            <li><a href="https://wa.me/8801XXXXXXXXX" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="icon" viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8z"/></svg></a></li>
-          </ul>
-        </div>
-        <div class="contact-right">
-          <div class="info-row">
-            <div>
-              <h3>Contact Info</h3>
-              <p><svg class="icon" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:shoshi4228@gmail.com">shoshi4228@gmail.com</a></p>
-              <p><svg class="icon" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+8801XXXXXXXXX">+880 1XXXXXXXXX</a></p>
-            </div>
-            <div>
-              <h3>Address</h3>
-              <p><svg class="icon" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>Dhaka, Bangladesh</p>
-            </div>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-number">01</div>
+          <div>
+            <h3>Shajabo.com — E-commerce Lighting Shop</h3>
+            <p>
+              A university team project for a lighting-shop e-commerce platform.
+              The system focuses on product browsing, product details, shopping,
+              reviews, order-related features, and organized customer/admin management.
+            </p>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span></div>
           </div>
-          <form id="contactForm" novalidate>
-            <label class="field"><span>Your name</span><input name="name" type="text" autocomplete="name" placeholder="Your name" required></label>
-            <label class="field"><span>Your email</span><input name="email" type="email" autocomplete="email" placeholder="name@yourname.com" required></label>
-            <label class="field"><span>Message</span><textarea name="message" rows="3" placeholder="Tell me what you've got in mind..." required></textarea></label>
-            <p class="form-error" id="formError" role="alert" hidden></p>
-            <button class="button solid" type="submit">Send message</button>
-          </form>
+        </article>
+        <article class="project-card">
+          <div class="project-number">02</div>
+          <div>
+            <h3>PHP Project</h3>
+            <p>
+              A PHP-based academic project developed as part of practical learning,
+              database/web development practice, and hands-on programming experience.
+            </p>
+            <div class="tags"><span>PHP</span><span>MySQL</span><span>XAMPP</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section soft" id="certificates">
+      <div class="section-heading">
+        <p class="eyebrow">Learning Milestones</p>
+        <h2>Certificates & Achievements</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <span>2026</span>
+          <div>
+            <h3>PHP Project Certificate</h3>
+            <p>Certificate received around January 2026 through project-based learning.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <span>Skill Development</span>
+          <div>
+            <h3>HTML / Front-End Development Training</h3>
+            <p>Government-supported skill-development project focused on HTML and front-end development. Certificate noted as pending receipt.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <span>Training</span>
+          <div>
+            <h3>Commerce-related Project Certificate</h3>
+            <p>Certificate associated with a project-based commerce learning experience.</p>
+          </div>
         </div>
       </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="contact-left">
+        <p class="eyebrow">Let's Talk</p>
+        <h2>Have a project<br>in mind?</h2>
+        <p>Feel free to reach out for opportunities, collaboration, or simply to connect.</p>
+        <div class="contact-links">
+          <a href="mailto:shoshi4228@gmail.com">✉ <span>shoshi4228@gmail.com</span></a>
+          <a href="https://github.com/SumaiyaSiddika24" target="_blank">GH <span>GitHub</span></a>
+          <a href="https://www.linkedin.com/in/sumaiya-siddika-248665363" target="_blank">in <span>LinkedIn</span></a>
+          <!-- Replace the placeholder number below with your WhatsApp number when available. -->
+          <a href="https://wa.me/8801919637347" target="_blank">WA <span>WhatsApp</span></a>
+        </div>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <label>Name<input name="name" type="text" placeholder="Your name" required></label>
+        <label>Email<input name="email" type="email" placeholder="your@email.com" required></label>
+        <label>Message<textarea name="message" rows="5" placeholder="Tell me about your message..." required></textarea></label>
+        <p class="form-error" id="formError" hidden></p>
+        <button class="btn solid" type="submit">Send Message</button>
+      </form>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <p>© <span id="year"></span> Sumaiya Siddika</p>
-    <a href="#home">Back to top</a>
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+  <div class="toast" id="toast"></div>
+
+  <footer>
+    <p>© <span id="year"></span> Sumaiya Siddika. Built with HTML, CSS & JavaScript.</p>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
